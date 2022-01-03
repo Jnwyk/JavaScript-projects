@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <title>Weather forecast</title>
+</head>
+<body>
+    <div class="slider">
+        <button class="btn btn-left">&lt;</button>
+        <button class="btn btn-right">&gt;</button>
+        <div class="title">
+            <img alt="weather picture" class="weather-picture">
+            <div class="city">London</div>
+            <div class="temperature"></div>
+            <div class="info-table">
+                <div class="info">
+                    <div class="name">Pressure</div>
+                    <div id="pressure"></div>
+                </div>
+                <div class="info">
+                    <div class="name">Wind</div>
+                    <div id="wind"></div>
+                </div>
+                <div class="info">
+                    <div class="name">Humidity</div>
+                    <div id="humidity"></div>
+                </div>
+            </div>
+        </div>
+        <ul>
+            <li class="picture active">
+                <img src="https://www.nit.pt/wp-content/uploads/2018/08/fd5014cab115b944242b07ccc5d03c74.jpg" alt="Porto picture">
+            </li>
+            <li class="picture">
+                <img src="https://images.musement.com/cover/0002/49/london-jpeg_header-148518.jpeg?w=1200&h=630&q=95&fit=crop" alt="London picture">
+            </li>
+            <li class="picture">
+                <img src="https://www.poland.travel/images/en-EN/cities/Gdansk/Gdanskkategoria.jpg" alt="Gdansk picture">
+            </li>
+        </ul>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
